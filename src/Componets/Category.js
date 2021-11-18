@@ -49,7 +49,7 @@ function Category() {
         </Col>
         <Col>
           <Card>
-            <Card.Img variant="top" src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" height ="400px" />
+            <Card.Img variant="top" src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F270085%2Fpexels-photo-270085.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D2%26h%3D650%26w%3D940" height ="400px" />
             <Card.Body>
               <Card.Title>Football</Card.Title>
               <Card.Text>
@@ -61,6 +61,18 @@ function Category() {
           </Card>
         </Col>
       </Row>
+      <Card className="bg-dark text-white">
+  <Card.Img src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F1616470%2Fpexels-photo-1616470.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1" alt="Card image" height ="200px" width ="40000px" />
+  <Card.ImgOverlay>
+    <Card.Title>Card title</Card.Title>
+    <Card.Text>
+      This is a wider card with supporting text below as a natural lead-in to
+      additional content. This content is a little bit longer.
+    </Card.Text>
+    <Card.Text>Last updated 3 mins ago</Card.Text>
+    <Link to="/music">Go To Music</Link>
+  </Card.ImgOverlay>
+</Card>
     </Container>
   )
 }
