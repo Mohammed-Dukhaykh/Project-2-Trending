@@ -5,6 +5,7 @@ function Home() {
     return ( <>
     <Category />
     <CarousolItem />
+    <h1>hi</h1>
     </> );
 }
 
