@@ -7,11 +7,12 @@ import { Route, Routes } from "react-router"
 import Movie from "./Pages/Movie"
 import PostsContext from "./Utils/PostsContext"
 import Home from "./Pages/Home"
+import Books from "./Pages/Books"
 
 function App() {
   const [films, setFilms] = useState([])
   const [books, setBooks] = useState([])
-
+const getBooks =  () => {
   const options = {
     method: "GET",
     url: "https://goodreads-books.p.rapidapi.com/lists",
@@ -26,10 +27,14 @@ function App() {
     .request(options)
     .then(function (response) {
       console.log(response.data)
+      setBooks(response.data)
+
     })
     .catch(function (error) {
       console.error(error)
     })
+}
+ 
 
   const getFilms = async () => {
     const response = await axios.get(
@@ -41,11 +46,13 @@ function App() {
 
   useEffect(() => {
     getFilms()
+    getBooks()
   }, [])
   console.log(films)
 
   const store = {
     films: films,
+    books : books
   }
 
   return (
@@ -54,6 +61,7 @@ function App() {
       <Routes>
         <Route path="/films" element={<Movie />} />
         <Route path="/" element={<Home />} />
+        <Route path="/books" element={< Books/>}/>
       </Routes>
     </PostsContext.Provider>
   )

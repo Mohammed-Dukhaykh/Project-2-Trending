@@ -14,7 +14,7 @@ function Category() {
                 content is a little bit longer.
               </Card.Text>
               
-              <Button variant="primary">Go somewhere</Button>
+              <Link to="/books">Go To Books</Link>
             </Card.Body>
           </Card>
         </Col>
