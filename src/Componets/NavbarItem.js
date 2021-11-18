@@ -1,4 +1,6 @@
 import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap"
+import {FaHome} from "react-icons/fa"
+import {CgLogIn} from "react-icons/cg"
 import { Link } from "react-router-dom"
 function NavbarItem() {
   return (
@@ -8,7 +10,7 @@ function NavbarItem() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-           <Link to="/" className="nav-link">Home</Link>
+           <Link to="/" className="nav-link " > <FaHome/></Link>
             
             <NavDropdown title="Category" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -18,15 +20,16 @@ function NavbarItem() {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Signup</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Login
-            </Nav.Link>
+            <Link to="/signup" className="nav-link">Sign up</Link>
+            <Link className="nav-link" to="/login" eventKey={2}>
+              <CgLogIn /> Login
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   )
+  
 }
 
 export default NavbarItem

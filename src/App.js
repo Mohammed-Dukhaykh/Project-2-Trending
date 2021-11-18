@@ -3,7 +3,7 @@ import NavbarItem from "./Componets/NavbarItem"
 import CarousolItem from "./Componets/Carousol"
 import { useEffect, useState } from "react"
 import axios from "axios"
-import { Route, Routes } from "react-router"
+import { Route, Routes, useNavigate } from "react-router"
 import Movie from "./Pages/Movie"
 import PostsContext from "./Utils/PostsContext"
 import Home from "./Pages/Home"
@@ -11,17 +11,18 @@ import Books from "./Pages/Books"
 import GamingItems from "./Pages/Gaming"
 import Football from "./Pages/Football"
 import MusicItems from "./Pages/Music"
+import Signup from "./Pages/Signup"
+import Login from "./Pages/Login"
 
 function App() {
   const [films, setFilms] = useState([])
   const [books, setBooks] = useState([])
   const [games, setGames] = useState([])
-  const [music, setMusic ] = useState([])
+  const [music, setMusic] = useState([])
   const [football, setFootball] = useState([])
+  const navigate = useNavigate()
 
   const getMusic = () => {
-    
-
     const options = {
       method: "GET",
       url: "https://theaudiodb.p.rapidapi.com/searchalbum.php",
@@ -37,7 +38,6 @@ function App() {
       .then(function (response) {
         console.log(music)
         setMusic(response.data.album)
-        
       })
       .catch(function (error) {
         console.error(error)
@@ -117,6 +117,41 @@ function App() {
     const resultItem = response.data
     setFilms(resultItem.results)
   }
+  const signup = async e => {
+    e.preventDefault()
+    const form = e.target
+
+    const postBody = {
+      firstName: form.elements.firstname.value,
+      lastName: form.elements.lastname.value,
+      password: form.elements.password.value,
+      email: form.elements.email.value,
+      photo: form.elements.photo.value,
+    }
+    await axios.post("https://vast-chamber-06347.herokuapp.com/api/user", postBody, {
+      headers: {
+        Authorization: localStorage.postToken,
+      },
+    })
+    navigate("/login")
+  }
+  const login = async e => {
+    e.preventDefault()
+    const form = e.target
+
+    const postBody = {
+      email: form.elements.email.value,
+      password: form.elements.password.value,
+    }
+    const response = await axios.post("https://vast-chamber-06347.herokuapp.com/api/user/auth", postBody, {
+      headers: {
+        Authorization: localStorage.postToken,
+      },
+    })
+    const token = response.data
+    localStorage.postToken = token
+    navigate("/")
+  }
 
   useEffect(() => {
     getFilms()
@@ -132,7 +167,9 @@ function App() {
     books: books,
     games: games,
     football: football,
-    music:music,
+    music: music,
+    signup: signup,
+    login: login,
   }
 
   return (
@@ -145,6 +182,8 @@ function App() {
         <Route path="/games" element={<GamingItems />} />
         <Route path="/football" element={<Football />} />
         <Route path="/music" element={<MusicItems />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </PostsContext.Provider>
   )
