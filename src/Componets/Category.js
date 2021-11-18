@@ -8,7 +8,7 @@ function Category() {
           <Card>
             <Card.Img variant="top" src="https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" height ="400px" />
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>Books</Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural lead-in to additional content. This
                 content is a little bit longer.
@@ -36,14 +36,14 @@ function Category() {
       <Row xs={1} md={2} className="g-4 mt-5 mb-3">
         <Col>
           <Card>
-            <Card.Img variant="top" src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" height ="400px" />
+            <Card.Img variant="top" src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3945683%2Fpexels-photo-3945683.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D2%26h%3D650%26w%3D940" height ="400px" />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural lead-in to additional content. This
                 content is a little bit longer.
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Link to="/games">Go To Games</Link>
             </Card.Body>
           </Card>
         </Col>

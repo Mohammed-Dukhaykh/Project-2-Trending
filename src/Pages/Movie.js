@@ -13,7 +13,7 @@ function Movie() {
             <Card.Img variant="top" src={"https://image.tmdb.org/t/p/w185_and_h278_bestv2" + film.poster_path} />
             <Card.Body>
               <Card.Title>{film.title}</Card.Title>
-              <Card.Text>
+              <Card.Text style={{overflow:"auto" , height:"100px"} }  >
                   {film.overview}
               </Card.Text>
             </Card.Body>

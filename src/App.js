@@ -8,10 +8,34 @@ import Movie from "./Pages/Movie"
 import PostsContext from "./Utils/PostsContext"
 import Home from "./Pages/Home"
 import Books from "./Pages/Books"
+import GamingItems from "./Pages/Gaming"
 
 function App() {
   const [films, setFilms] = useState([])
   const [books, setBooks] = useState([])
+  const [games, setGames] = useState([])
+
+const getGames = () => {
+  const options = {
+    method: 'GET',
+    url: 'https://steam-store-data.p.rapidapi.com/api/featured/',
+    headers: {
+      'x-rapidapi-host': 'steam-store-data.p.rapidapi.com',
+      'x-rapidapi-key': 'aab17fc00dmsh51739c9a720ec3cp115014jsna2f612076b1f'
+    }
+  };
+  
+  axios.request(options).then(function (response) {
+    console.log(games);
+    const testt = (response.data)
+    setGames(testt.featured_win)
+
+  }).catch(function (error) {
+    console.error(error);
+  });
+}
+
+
 const getBooks =  () => {
   const options = {
     method: "GET",
@@ -48,12 +72,14 @@ const getBooks =  () => {
   useEffect(() => {
     getFilms()
     getBooks()
+    getGames()
   }, [])
   console.log(films)
 
   const store = {
     films: films,
-    books : books
+    books : books,
+    games:games
   }
 
   return (
@@ -63,6 +89,7 @@ const getBooks =  () => {
         <Route path="/films" element={<Movie />} />
         <Route path="/" element={<Home />} />
         <Route path="/books" element={< Books/>}/>
+        <Route path="/games" element={<GamingItems/>}/>
       </Routes>
     </PostsContext.Provider>
   )
