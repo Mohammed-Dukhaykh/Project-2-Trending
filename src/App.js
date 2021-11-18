@@ -28,6 +28,7 @@ const getBooks =  () => {
     .then(function (response) {
       console.log(response.data)
       setBooks(response.data)
+    
 
     })
     .catch(function (error) {

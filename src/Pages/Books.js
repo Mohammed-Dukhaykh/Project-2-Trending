@@ -1,25 +1,34 @@
 import { useContext } from "react"
-import { Card, CardGroup } from "react-bootstrap"
+import { Card, CardGroup, Col, Row } from "react-bootstrap"
+import CardHeader from "react-bootstrap/esm/CardHeader"
 import PostsContext from "../Utils/PostsContext"
 function Books() {
   const { books } = useContext(PostsContext)
   return (
-    <CardGroup>
+    <>
       {books?.map(book => (
-        <Card>
-          <Card.Img variant="top" src="" />
+          <>
+       <Card.Header as="h2" className="text-center" >{book.name}</Card.Header>
+        <Row>
+        {book.preview.map(prev=>(
+            <Col>
+            <Card>
+          <Card.Img variant="top" src={prev.imageURL} />
           <Card.Body>
-            <Card.Title>{book.name}</Card.Title>
-            <Card.Text>
-             {book.preview.title}
-            </Card.Text>
+            <Card.Title className="text-center">{prev.title}</Card.Title>
+            <Card.Text></Card.Text>
           </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
+          
+           
+          
         </Card>
+        </Col>
+        ))}
+        </Row>
+</>
+
       ))}
-    </CardGroup>
+    </>
   )
 }
 
