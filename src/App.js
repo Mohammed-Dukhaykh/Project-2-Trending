@@ -9,11 +9,32 @@ import PostsContext from "./Utils/PostsContext"
 import Home from "./Pages/Home"
 import Books from "./Pages/Books"
 import GamingItems from "./Pages/Gaming"
+import Football from "./Pages/Football"
 
 function App() {
   const [films, setFilms] = useState([])
   const [books, setBooks] = useState([])
   const [games, setGames] = useState([])
+  const [football , setFootball] = useState([])
+
+  const getFootball = () => {
+    const options = {
+      method: 'GET',
+      url: 'https://football-pro.p.rapidapi.com/api/v2.0/leagues',
+      params: {page: '1', tz: 'Europe/Amsterdam'},
+      headers: {
+        'x-rapidapi-host': 'football-pro.p.rapidapi.com',
+        'x-rapidapi-key': '5b44381711msh9d91a31c4b70497p157cdajsn881d20d4eff0'
+      }
+    };
+    
+    axios.request(options).then(function (response) {
+      setFootball(response.data.data)
+      console.log(football)
+    }).catch(function (error) {
+      console.error(error);
+    });
+  }
 
 const getGames = () => {
   const options = {
@@ -73,13 +94,15 @@ const getBooks =  () => {
     getFilms()
     getBooks()
     getGames()
+    getFootball()
   }, [])
   console.log(films)
 
   const store = {
     films: films,
     books : books,
-    games:games
+    games: games ,
+    football : football
   }
 
   return (
@@ -90,6 +113,7 @@ const getBooks =  () => {
         <Route path="/" element={<Home />} />
         <Route path="/books" element={< Books/>}/>
         <Route path="/games" element={<GamingItems/>}/>
+        <Route path="/football" element={<Football/>}/>
       </Routes>
     </PostsContext.Provider>
   )
