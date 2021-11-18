@@ -6,7 +6,7 @@ function Category() {
       <Row xs={1} md={2} className="g-4 mt-5 mb-3">
         <Col>
           <Card>
-            <Card.Img variant="top" src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+            <Card.Img variant="top" src="https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" height ="400px" />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
               <Card.Text>
@@ -20,7 +20,7 @@ function Category() {
         </Col>
         <Col>
           <Card>
-            <Card.Img variant="top" src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+            <Card.Img variant="top" src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"height ="400px" />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
               <Card.Text>
@@ -36,7 +36,7 @@ function Category() {
       <Row xs={1} md={2} className="g-4 mt-5 mb-3">
         <Col>
           <Card>
-            <Card.Img variant="top" src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+            <Card.Img variant="top" src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" height ="400px" />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
               <Card.Text>
@@ -49,7 +49,7 @@ function Category() {
         </Col>
         <Col>
           <Card>
-            <Card.Img variant="top" src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+            <Card.Img variant="top" src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" height ="400px" />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
               <Card.Text>

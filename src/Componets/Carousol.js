@@ -1,18 +1,16 @@
-import {Carousel, Container} from "react-bootstrap"
+import { Carousel, Container } from "react-bootstrap"
 function CarousolItem() {
-    return ( 
+  return (
     <Container>
-            <Carousel className="d-block w-70 mx-auto mt-5" >
-        <Carousel.Item   >
+      <Carousel className="d-block w-70 mx-auto mt-5">
+        <Carousel.Item>
           <img
             className="d-block w-100"
             src="https://images.pexels.com/photos/3137890/pexels-photo-3137890.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940/150x150"
             alt="First slide"
             height="600"
-            
-            
           />
-          <Carousel.Caption  >
+          <Carousel.Caption>
             <h3 className="text-dark">First slide label</h3>
             <p className="text-dark">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
@@ -24,7 +22,7 @@ function CarousolItem() {
             alt="Second slide"
             height="600"
           />
-      
+
           <Carousel.Caption>
             <h3>Second slide label</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -37,7 +35,7 @@ function CarousolItem() {
             alt="Third slide"
             height="600"
           />
-      
+
           <Carousel.Caption>
             <h3>Third slide label</h3>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -50,14 +48,28 @@ function CarousolItem() {
             alt="Third slide"
             height="600"
           />
-      
+
           <Carousel.Caption>
             <h3 className="text-dark">Third slide label</h3>
             <p className="text-dark">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
           </Carousel.Caption>
         </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-fliex w-100"
+            src="https://images.pexels.com/photos/270085/pexels-photo-270085.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="Third slide"
+            height="600"
+          />
+
+          <Carousel.Caption>
+            <h3 >Third slide label</h3>
+            <p >Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
       </Carousel>
-      </Container> );
+    </Container>
+  )
 }
 
-export default CarousolItem;
+export default CarousolItem
