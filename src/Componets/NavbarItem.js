@@ -1,7 +1,9 @@
 import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap"
 import {FaHome} from "react-icons/fa"
 import {CgLogIn} from "react-icons/cg"
+import {BiCategory} from "react-icons/bi"
 import { Link } from "react-router-dom"
+
 function NavbarItem() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -10,9 +12,8 @@ function NavbarItem() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-           <Link to="/" className="nav-link " > <FaHome/></Link>
-            
-            <NavDropdown title="Category" id="collasible-nav-dropdown">
+           <Link to="/" className="nav-link " > <FaHome className="ms-2"/> <br />Home</Link>
+            <NavDropdown title="Category"  id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
