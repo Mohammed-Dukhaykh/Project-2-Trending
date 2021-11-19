@@ -3,8 +3,9 @@ import Category from "../Componets/Category";
 
 function Home() {
     return ( <>
+      <CarousolItem />
     <Category />
-    <CarousolItem />
+  
     </> );
 }
 
