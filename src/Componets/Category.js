@@ -14,7 +14,7 @@ function Category() {
               <Card.Body className="mt-5 d-flex flex-column align-items-center">
                 <Card.Title style={{ fontSize: "50px", fontWeight: "bolder" }}>Movies</Card.Title>
                 <Card.Text className="mt-5" style={{ textAlign: "center" }}>
-                  A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring whic
+                  This Section Includes many Trending Movies And Box Office Movies And Best Movies Right Now .
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="mt-4">
@@ -38,9 +38,8 @@ function Category() {
               <Card.Body className="mt-5 d-flex flex-column align-items-center">
                 <Card.Title  style={{ fontSize: "50px", fontWeight: "bolder" }}>Gaming</Card.Title>
                 <Card.Text  className="mt-5" style={{ textAlign: "center" }}>
-                  A wonderful serenity has taken Card.Textossession of my entire soul, like these sweet mornings of
-                  sCard.Textring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this
-                  sCard.Textot, which was created for the bliss of souls like mine.
+                    In This Section You Can Watch All Trending Games And Best Games Right Now And Many 
+                    Type of Games Like Football Games And War Games and other Type.
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="mt-4">
@@ -69,9 +68,7 @@ function Category() {
               <Card.Body className="mt-5 d-flex flex-column align-items-center">
                 <Card.Title  style={{ fontSize: "50px", fontWeight: "bolder" }}>Books</Card.Title>
                 <Card.Text className="mt-5" style={{ textAlign: "center" }}>
-                  A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which
-                  I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was
-                  created for the bliss of souls like mine.
+                  You Can Watch In
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="mt-4">

@@ -1,7 +1,7 @@
 import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap"
 import {FaHome} from "react-icons/fa"
 import {CgLogIn} from "react-icons/cg"
-import {BiCategory} from "react-icons/bi"
+import {BsArrowBarRight , BsArrowBarUp} from "react-icons/bs"
 import { Link } from "react-router-dom"
 
 function NavbarItem() {
@@ -12,7 +12,7 @@ function NavbarItem() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-           <Link to="/" className="nav-link " > <FaHome className="ms-2"/> <br />Home</Link>
+           <Link to="/" className="nav-link " >Home</Link>
             <NavDropdown title="Category"  id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -21,9 +21,9 @@ function NavbarItem() {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Link to="/signup" className="nav-link">Sign up</Link>
+            <Link to="/signup" className="nav-link"><BsArrowBarUp /> Sign up</Link>
             <Link className="nav-link" to="/login" eventKey={2}>
-              <CgLogIn /> Login
+              <BsArrowBarRight /> Login
             </Link>
           </Nav>
         </Navbar.Collapse>

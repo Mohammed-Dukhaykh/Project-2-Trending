@@ -17,10 +17,10 @@ function CarousolItem() {
       <Container >
         <Row >
           <Col className="mx-5">
-          <h3>Heading</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit ipsum 
-            repellendus molestias dolores atque quae vel ea fugit laboriosam tenetur.</p>
-          <Button>Click here</Button>
+          <h3 style={{fontSize:"80px" , fontWeight:"bolder"}}>SHARE YOUR TRENDING</h3>
+          <p style={{fontSize:"20px"}}>Share your trending movie and sports and music and books and games and other trending and make other people to watch 
+            your trending , and watch all trending people</p>
+          <Button>Go To Tending Posts</Button>
           </Col>
           <Col>
           <div>
