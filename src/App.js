@@ -24,46 +24,35 @@ function App() {
 
   const getMusic = () => {
     const options = {
-      method: 'GET',
-      url: 'https://shazam.p.rapidapi.com/songs/list-artist-top-tracks',
-      params: {id: '40008598', locale: 'en-US'},
-      headers: {
-        'x-rapidapi-host': 'shazam.p.rapidapi.com',
-        'x-rapidapi-key': '5b44381711msh9d91a31c4b70497p157cdajsn881d20d4eff0'
-      }
-    };
-    
-    axios.request(options).then(function (response) {
-      console.log(response.data)
-      const allMusic = response.data
-      setMusic(allMusic.tracks)
-    }).catch(function (error) {
-      console.error(error);
-    });
-  }
-
-  const getFootball = () => {
-    const options = {
       method: "GET",
-      url: "https://football-pro.p.rapidapi.com/api/v2.0/leagues",
-      params: { page: "1", tz: "Europe/Amsterdam" },
+      url: "https://theaudiodb.p.rapidapi.com/searchalbum.php",
+      params: { s: "daft_punk" },
       headers: {
-        "x-rapidapi-host": "football-pro.p.rapidapi.com",
-        "x-rapidapi-key": "5b44381711msh9d91a31c4b70497p157cdajsn881d20d4eff0",
+        "x-rapidapi-host": "theaudiodb.p.rapidapi.com",
+        "x-rapidapi-key": "aab17fc00dmsh51739c9a720ec3cp115014jsna2f612076b1f",
       },
     }
 
     axios
       .request(options)
       .then(function (response) {
-        setFootball(response.data.data)
-        console.log(football)
+        setMusic(response.data.album)
       })
       .catch(function (error) {
         console.error(error)
       })
   }
 
+  const getFootball = async () => {
+    const response = await axios.get(
+      "https://sports.api.decathlon.com/sports"
+    )
+    const attributesItems = response.data.data
+    setFootball(attributesItems)
+
+    
+    
+  }
   const getGames = () => {
     const options = {
       method: "GET",
@@ -77,7 +66,7 @@ function App() {
     axios
       .request(options)
       .then(function (response) {
-        console.log(games)
+       
         const testt = response.data
         setGames(testt.featured_win)
       })
@@ -100,7 +89,7 @@ function App() {
     axios
       .request(options)
       .then(function (response) {
-        console.log(response.data)
+      
         setBooks(response.data)
       })
       .catch(function (error) {
@@ -158,7 +147,7 @@ function App() {
     getFootball()
     getMusic()
   }, [])
-  console.log(films)
+
 
   const store = {
     films: films,

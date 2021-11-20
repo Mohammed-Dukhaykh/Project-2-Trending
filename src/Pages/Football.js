@@ -7,16 +7,28 @@ function Football() {
       <Container>
     <Row xs={1} md={4} className="g-4">
       {football.map(item => (
-        <Col>
+        <Col key={item._id}>
+          
           <Card>
-            <Card.Img variant="top" src={item.logo_path} />
+            <Card.Img variant="top" src={item.relationships.images.data[0]?.url} />
             <Card.Body>
-              <Card.Title>{item.name}</Card.Title>
+              <Card.Title>{item.attributes.name}</Card.Title>
             </Card.Body>
           </Card>
+          
+          {/* {item.relationships.map(img=>(
+            <Card>
+            <Card.Img variant="top" src={img.imges.data.url} />
+            </Card>
+
+          ))} */}
         </Col>
+
+        
       ))}
+     
     </Row>
+   
     </Container>
   )
 }
