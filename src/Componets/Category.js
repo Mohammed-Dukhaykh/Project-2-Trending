@@ -68,7 +68,8 @@ function Category() {
               <Card.Body className="mt-5 d-flex flex-column align-items-center">
                 <Card.Title  style={{ fontSize: "50px", fontWeight: "bolder" }}>Books</Card.Title>
                 <Card.Text className="mt-5" style={{ textAlign: "center" }}>
-                  You Can Watch In
+                  You Can Watch In This Section Many Types Of Types Like History Books And Classics Books And Detective and Mystery
+                  Books And Fantasy Books And Horror Books .
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="mt-4">
