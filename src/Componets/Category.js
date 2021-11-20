@@ -90,11 +90,10 @@ function Category() {
           <Row>
             <Col>
               <Card.Body className="mt-5 d-flex flex-column align-items-center">
-                <Card.Title  style={{ fontSize: "50px", fontWeight: "bolder" }}>Football</Card.Title>
+                <Card.Title  style={{ fontSize: "50px", fontWeight: "bolder" }}>Sports</Card.Title>
                 <Card.Text className="mt-5" style={{ textAlign: "center" }} >
-                  A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which
-                  I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was
-                  created for the bliss of souls like mine.
+                 This Section Includes All Sports Trending And There Are Many Sports Like Football And Running 
+                 And Swimming And Road Cycling And Horse competition And Other Sports .
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="mt-4">
@@ -104,13 +103,13 @@ function Category() {
                     to="/football"
                   >
                     {" "}
-                    Go To Football <BsChevronRight />
+                    Go To Sports <BsChevronRight />
                   </Link>
                 </div>
               </Card.Footer>
             </Col>
             <Col className="ml-5">
-              <Card.Img src="https://images.unsplash.com/photo-1551388749-6b3478890d58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTY5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" />
+              <Card.Img src="https://images.unsplash.com/photo-1609773335024-be4301497ea9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
             </Col>
           </Row>
         </Card>
@@ -123,9 +122,8 @@ function Category() {
               <Card.Body className="mt-5 d-flex flex-column align-items-center">
                 <Card.Title style={{ fontSize: "50px", fontWeight: "bolder" }}>Music</Card.Title>
                 <Card.Text className="mt-5" style={{ textAlign: "center" }}>
-                  A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which
-                  I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was
-                  created for the bliss of souls like mine.
+                 This Section You Will Found All Top Music Right Now And You Can Watch All Trending Music 
+                 And You Can To Listen To Music From The Link In Page .
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="mt-4">

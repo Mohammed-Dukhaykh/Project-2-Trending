@@ -9,9 +9,9 @@ function MusicItems() {
   return (
     <Row xs={1} md={5} className="g-4">
       {music.map(item => (
-        <Col>
+        <Col key={item.key}>
           <Card>
-            <Card.Img variant="top" src={item.images.coverarthq} />
+            <Card.Img variant="top" src={item.images.coverart} />
             <Card.Body>
               <Card.Title>{item.title}</Card.Title>
             </Card.Body>
