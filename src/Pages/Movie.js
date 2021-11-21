@@ -6,16 +6,16 @@ function Movie() {
   const { films } = useContext(PostsContext)
   return (
 
-  <body style={{backgroundColor:"black"}}>
+  <body style={{backgroundImage:`url("https://images.pond5.com/film-background-footage-050676340_iconl.jpeg")`,backgroundColor:"black"}}>
     
   
 
   <br></br>  
     <h1 style={{textAlign:"center" , fontStyle:"italic" , color:"GhostWhite"}}>The Films are trending</h1>
-      <Container>
-    <Row key={films.id} xs={1} md={2} className="g-5 mx-4 ">
+      <Container style={{margin:"60px"}}>
+    <Row key={films.id} xs={1} md={2} className="g-5 ">
       {films.map(film => (
-        <Card style={{backgroundColor:"DarkRed" } }>
+        <Card style={{backgroundColor:"DarkRed", marginLeft:"290px" } } className=" me-1"  >
           <Row style={{ justifyContent:"space-between"}}>
           <Col>
             <Image className="img-fluid rounded-start" variant="top" src={"https://image.tmdb.org/t/p/w185_and_h278_bestv2" + film.poster_path} />
