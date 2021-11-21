@@ -5,19 +5,20 @@ function Signup() {
     const {signup} = useContext(PostsContext)
     return ( 
       
-     <div>
+     <div className="d-flex flex-row justify-content-center"   style={{backgroundImage:"-webkit-linear-gradient( 136deg, rgb(0,0,70) 0%, rgb(28,181,224) 100%)" , height:"100%" , backgroundAttachment:"fixed"}} >
     
-    <Container>
       
       
-     <Row   style={{backgroundColor:"#ADD8E6"   , borderRadius:"20px"}} className="m-5">
-       <Col className="mx-0">
-       <Card.Img src="https://images.pexels.com/photos/937627/pexels-photo-937627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" height="600px" width="100%" />
-       </Col>
-       <Col>  
+     <div className="d-flex flex-row justify-content-center m-5" style={{ borderRadius:"20px"}}>
+       <div>
+       <Card.Img src="https://images.pexels.com/photos/937627/pexels-photo-937627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" height="700px" width="100%" />
+       </div>
+       <div style={{backgroundColor:"white"}}>  
        
-    <Form onSubmit={signup} className="mt-5">
-    <h2>Sign up </h2>
+    <Form  onSubmit={signup} className="m-5 d-flex flex-column align-items-center">
+    <Card.Header as="h1">Sign up </Card.Header>
+    <br />
+    
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridEmail">
             <Form.Label>First Name</Form.Label>
@@ -48,15 +49,14 @@ function Signup() {
         </Row>
         <div className="d-flex align-items-center justify-content-center">
         <Button style={{backgroundColor:"#ADD8E6"  , color:"black" , border:"none" , padding:"10px 30px" , letterSpacing:"4px" , fontWeight:"bold" }} variant="primary" type="submit">
-          SIGNUP>
+          SIGNUP
         </Button>
         </div>
       </Form>
       
-      </Col>
-      </Row>
-      </Container>
       </div>
+      </div>
+       </div>
        );
 }
 

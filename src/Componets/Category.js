@@ -5,6 +5,7 @@ function Category() {
   return (
     <>
       <Container>
+        <Card.Header style={{fontSize:"60px" , fontWeight:"bold" , letterSpacing:"4px" ,  lineHeight:"2"}} as="h1" className="text-center"  >All Sections </Card.Header>
         <Card className="mt-5">
           <Row>
             <Col>
