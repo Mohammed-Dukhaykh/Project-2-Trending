@@ -10,7 +10,7 @@ function Signup() {
     <Container>
       
       
-     <Row   style={{backgroundColor:"#F0FFF0"   , borderRadius:"20px"}} className="m-5">
+     <Row   style={{backgroundColor:"#ADD8E6"   , borderRadius:"20px"}} className="m-5">
        <Col className="mx-0">
        <Card.Img src="https://images.pexels.com/photos/937627/pexels-photo-937627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" height="600px" width="100%" />
        </Col>
@@ -48,7 +48,7 @@ function Signup() {
         </Row>
         <div className="d-flex align-items-center justify-content-center">
         <Button style={{backgroundColor:"#ADD8E6"  , color:"black" , border:"none" , padding:"10px 30px" , letterSpacing:"4px" , fontWeight:"bold" }} variant="primary" type="submit">
-          SIGNUP
+          SIGNUP>
         </Button>
         </div>
       </Form>

@@ -16,7 +16,7 @@ function Login() {
       
       
       <div class="d-flex justify-content-center" style={{ backgroundImage:`url("https://images.pexels.com/photos/212372/pexels-photo-212372.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")` , backgroundAttachment:"fixed" }} >
-        <div class="card" style={{width:"500px",height:"500px " , marginBottom:"10px" , marginTop:"20px" , paddingBottom:"1px" , backgroundImage:`url("https://images.pexels.com/photos/5274203/pexels-photo-5274203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")` }} >
+        <div class="card" style={{width:"500px",height:"100vh " , marginBottom:"10px" , marginTop:"20px" , paddingBottom:"1px" , backgroundImage:`url("https://images.pexels.com/photos/5274203/pexels-photo-5274203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")` }} >
        <div >
           
             <h3 style={{textAlign:"center"}} >Sign In</h3>
