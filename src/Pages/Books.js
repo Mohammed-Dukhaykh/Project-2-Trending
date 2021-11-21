@@ -8,11 +8,16 @@ function Books() {
     <>
       {books?.map(book => (
           <>
-       <Card.Header as="h2" className="text-center" >{book.name}</Card.Header>
-        <Row   xs={1} md={3} className="g-5 mx-4 ">
+          <Card>
+            <Row   xs={1} md={4} className="g-5 mx-4 ">
+              <Col>
+       <h1  className="text-center" >{book.name}</h1>
+       </Col>
+      
         {book.preview.map(prev=>(
-           <Card>
-           <Row style={{ justifyContent:"space-between"}}>
+          <Col>
+           
+          
            <Col>
              <Image className="img-fluid rounded-start" variant="top" src={prev.imageURL} height="200px" />
              </Col>
@@ -23,10 +28,12 @@ function Books() {
               
              </Card.Body>
              </Col>
-           </Row>
-         </Card>
+          
+         
+         </Col>
         ))}
         </Row>
+        </Card>
 </>
 
       ))}

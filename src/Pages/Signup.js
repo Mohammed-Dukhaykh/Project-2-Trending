@@ -1,11 +1,21 @@
 import { useContext } from "react";
-import {Form , Col , Row , Button, Container} from "react-bootstrap"
+import {Form , Col , Row , Button, Container , Image, Card} from "react-bootstrap"
 import PostsContext from "../Utils/PostsContext";
 function Signup() {
     const {signup} = useContext(PostsContext)
     return ( 
+      
+     <div>
+    
     <Container>
-        
+      
+      
+     <Row   style={{backgroundColor:"#F0FFF0"   , borderRadius:"20px"}} className="m-5">
+       <Col className="mx-0">
+       <Card.Img src="https://images.pexels.com/photos/937627/pexels-photo-937627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" height="600px" width="100%" />
+       </Col>
+       <Col>  
+       
     <Form onSubmit={signup} className="mt-5">
     <h2>Sign up </h2>
         <Row className="mb-3">
@@ -36,11 +46,18 @@ function Signup() {
           <Form.Control type="photo" placeholder="Enter Your Photo" required name="photo" />
         </Form.Group>
         </Row>
-        <Button variant="primary" type="submit">
-          Signup
+        <div className="d-flex align-items-center justify-content-center">
+        <Button style={{backgroundColor:"#ADD8E6"  , color:"black" , border:"none" , padding:"10px 30px" , letterSpacing:"4px" , fontWeight:"bold" }} variant="primary" type="submit">
+          SIGNUP
         </Button>
+        </div>
       </Form>
-      </Container> );
+      
+      </Col>
+      </Row>
+      </Container>
+      </div>
+       );
 }
 
 export default Signup;
