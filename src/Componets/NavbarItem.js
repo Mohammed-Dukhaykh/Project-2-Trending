@@ -1,4 +1,4 @@
-import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap"
+import { Nav, Navbar, Container, NavDropdown , Image} from "react-bootstrap"
 import {FaHome} from "react-icons/fa"
 import {CgLogIn} from "react-icons/cg"
 import {BsArrowBarRight , BsArrowBarUp} from "react-icons/bs"
@@ -11,6 +11,7 @@ function NavbarItem() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
+        {/* <Image src="https://pbs.twimg.com/media/FEt7_UHWQAQuKqp?format=png&name=240x240" height="80px" /> */}
         <Navbar.Brand href="#home">Trending</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

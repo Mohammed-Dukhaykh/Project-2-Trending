@@ -1,9 +1,11 @@
 import { useContext } from "react";
 import PostsContext from "../Utils/PostsContext";
 import {Col , Row , Image , Container , Card} from "react-bootstrap"
+import Button from "@restart/ui/esm/Button";
+import ModelItem from "../Componets/ModelItem";
 
 function Profile() {
-    const {trndingPost , profile} = useContext(PostsContext)
+    const {trndingPost , profile , handleShow , removePost} = useContext(PostsContext)
     if(!profile) {
         return <h1>Loading...</h1>
     }
@@ -16,18 +18,24 @@ function Profile() {
             </Col>
         </Row>
         <Row>
-            {myPost.map(item => {
+            {myPost.map(item => (
+                <>
                   <Card style={{ width: '18rem' }}>
                   <Card.Img variant="top" src={item.image} />
                   <Card.Body>
                     <Card.Text>
                      {item.title}
                     </Card.Text>
-                    
                   </Card.Body>
+                  <Button onClick={handleShow}>Edit</Button>
+                  <Button onClick={removePost} id={item._id }>Delete</Button>
+
                 </Card>  
-            })}
+                <ModelItem item={item} />
+                </>
+            ))}
         </Row>
+        
         </Container>);
 }
 

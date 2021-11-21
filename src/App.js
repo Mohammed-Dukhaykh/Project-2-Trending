@@ -25,7 +25,15 @@ function App() {
   const [music, setMusic] = useState([])
   const [profile , setProfile] = useState(null)
   const [football, setFootball] = useState([])
+  const [show , setShow] = useState(false)
   const navigate = useNavigate()
+
+  const handleClose = () => {
+    setShow(false)
+  }
+  const handleShow = () => {
+    setShow(true)
+  }
 
   const getTrendingPosts = async () => {
     const response = await axios.get("https://vast-chamber-06347.herokuapp.com/api/v2/trending-548/items")
@@ -42,6 +50,32 @@ function App() {
     console.log(response.data)
     
   }
+  const confirmPost = async (e , postId ) => {
+    e.preventDefault()
+    const form = e.target
+    const postBody = {
+      title : form.elements.description.value ,
+      image : form.elements.image.value
+    }
+    await axios.put(`https://vast-chamber-06347.herokuapp.com/api/v2/trending-548/items/${postId}` , postBody , {
+      headers : {
+        Authorization: localStorage.postToken,
+      }
+    })
+    getTrendingPosts()
+  }
+
+  const removePost = async (e) => {
+    const postId = e.target.id
+    await axios.delete(`https://vast-chamber-06347.herokuapp.com/api/v2/trending-548/items/${postId}` , {
+      headers : {
+        Authorization: localStorage.postToken,
+      }
+    })
+    getTrendingPosts()
+  }
+
+
   const getMusic = () => {
     const options = {
       method: 'GET',
@@ -206,7 +240,12 @@ function App() {
     login: login,
     logout : logout ,
     addPost : addPost ,
-    profile : profile
+    profile : profile ,
+    handleClose : handleClose ,
+    handleShow : handleShow ,
+    show : show ,
+    confirmPost : confirmPost ,
+    removePost : removePost
     
 
   }
