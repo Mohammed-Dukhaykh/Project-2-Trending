@@ -13,15 +13,35 @@ import Football from "./Pages/Football"
 import MusicItems from "./Pages/Music"
 import Signup from "./Pages/Signup"
 import Login from "./Pages/Login"
+import TrendingPosts from "./Pages/TrendingPosts"
+import AddPosts from "./Pages/AddPosts"
+import Profile from "./Pages/Profile"
 
 function App() {
+  const [trndingPost , setTrendingPost] = useState([])
   const [films, setFilms] = useState([])
   const [books, setBooks] = useState([])
   const [games, setGames] = useState([])
   const [music, setMusic] = useState([])
+  const [profile , setProfile] = useState(null)
   const [football, setFootball] = useState([])
   const navigate = useNavigate()
 
+  const getTrendingPosts = async () => {
+    const response = await axios.get("https://vast-chamber-06347.herokuapp.com/api/v2/trending-548/items")
+    setTrendingPost(response.data)
+
+  }
+  const getProfile = async () => {
+    const response = await axios.get("https://vast-chamber-06347.herokuapp.com/api/user/me" , {
+      headers : {
+        Authorization: localStorage.postToken,
+      }
+    })
+    setProfile(response.data)
+    console.log(response.data)
+    
+  }
   const getMusic = () => {
     const options = {
       method: 'GET',
@@ -136,19 +156,47 @@ function App() {
     })
     const token = response.data
     localStorage.postToken = token
+    getProfile()
     navigate("/")
+  }
+  const logout = () => {
+    localStorage.removeItem("postToken")
+    navigate("/")
+  }
+  const addPost = async (e) => {
+    console.log("hhhhhhh")
+    e.preventDefault()
+    const form = e.target
+    console.log("mmmmm")
+    const postBody = {
+      image : form.elements.image.value ,
+      title : form.elements.description.value ,
+    }
+    await axios.post("https://vast-chamber-06347.herokuapp.com/api/v2/trending-548/items" , postBody , {
+      headers: {
+        Authorization: localStorage.postToken,
+      },
+    })
+    getTrendingPosts()
+    navigate("/tending-posts")
   }
 
   useEffect(() => {
+    getTrendingPosts()
     getFilms()
     getBooks()
     getGames()
     getFootball()
     getMusic()
+    if(localStorage.postToken) {
+      getProfile()
+    }
+  
   }, [])
 
 
   const store = {
+    trndingPost : trndingPost ,
     films: films,
     books: books,
     games: games,
@@ -156,6 +204,11 @@ function App() {
     music: music,
     signup: signup,
     login: login,
+    logout : logout ,
+    addPost : addPost ,
+    profile : profile
+    
+
   }
 
   return (
@@ -170,6 +223,9 @@ function App() {
         <Route path="/music" element={<MusicItems />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/tending-posts" element={<TrendingPosts />} />
+        <Route path="/add-post" element={<AddPosts />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </PostsContext.Provider>
   )

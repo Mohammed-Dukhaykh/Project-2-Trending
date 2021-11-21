@@ -20,7 +20,7 @@ function CarousolItem() {
           <h3 style={{fontSize:"80px" , fontWeight:"bolder"}}>SHARE YOUR TRENDING</h3>
           <p style={{fontSize:"20px"}}>Share your trending movie and sports and music and books and games and other trending and make other people to watch 
             your trending , and watch all trending people</p>
-          <Button>Go To Tending Posts</Button>
+          <Link to="/tending-posts" className="btn btn-primary">Go To Tending Posts</Link>
           </Col>
           <Col>
           <div>
