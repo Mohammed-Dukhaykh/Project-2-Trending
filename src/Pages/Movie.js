@@ -6,7 +6,7 @@ function Movie() {
   const { films } = useContext(PostsContext)
   return (
 
-  <body style={{backgroundImage:`url("https://images.pond5.com/film-background-footage-050676340_iconl.jpeg")`,backgroundColor:"black" ,   backgroundAttachment: "fixed" , height:"100%"  }}>
+  <div style={{backgroundImage:`url("https://images.pond5.com/film-background-footage-050676340_iconl.jpeg")`,backgroundColor:"black" ,   backgroundAttachment: "fixed" , height:"100%"  }}>
     
   
 
@@ -35,7 +35,7 @@ function Movie() {
     </Row>
     {/* </Container> */}
     
-    </body>
+    </div>
   )
 }
 
