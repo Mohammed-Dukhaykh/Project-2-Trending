@@ -15,11 +15,11 @@ function Books() {
        </div>
       
         {book.preview.map(prev=>(
-          <div style={{backgroundColor:"#DCDCDC"}} className="d-flex flex-row tex-nowrap m-5" > 
+          <div style={{backgroundColor:"#DCDCDC" , height:"200px " , width:"400px"}} className="d-inline-flex justify-content-center  m-5" > 
            
           
            
-             <Image className="img-fluid rounded-start" variant="top" src={prev.imageURL} height="200px" />
+             <Card.Img className="img-fluid rounded-start" variant="top" src={prev.imageURL}  height="100px" />
              
              
              
