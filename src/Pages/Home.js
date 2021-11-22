@@ -3,11 +3,11 @@ import Category from "../Componets/Category";
 
 function Home() {
     return ( <>
-    <body style={{backgroundColor:"Gainsboro"}}>
+    <div style={{backgroundColor:"Gainsboro"}}>
       <CarousolItem />
     <Category />
 
-    </body>
+    </div>
     </>
     );
 }

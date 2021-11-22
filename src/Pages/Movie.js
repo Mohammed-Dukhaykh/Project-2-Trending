@@ -7,6 +7,7 @@ function Movie() {
   return (
 
   <body style={{backgroundImage:`url("https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/5e402bb0-94a3-4e0c-bcb8-be41acaad140/SA-ar-20211115-popsignuptwoweeks-perspective_alpha_website_small.jpg")`,  backgroundAttachment: "fixed" , height:"100%" ,  }}>
+  <div style={{backgroundImage:`url("https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/5e402bb0-94a3-4e0c-bcb8-be41acaad140/SA-ar-20211115-popsignuptwoweeks-perspective_alpha_website_small.jpg")`,backgroundColor:"black" ,   backgroundAttachment: "fixed" , height:"100%"  }}>
     
   
 
@@ -35,6 +36,7 @@ function Movie() {
     </Row>
     {/* </Container> */}
     
+    </div>
     </body>
   )
 }
