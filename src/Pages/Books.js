@@ -15,7 +15,7 @@ function Books() {
        </div>
       
         {book.preview.map(prev=>(
-          <div style={{backgroundColor:"#DCDCDC" , height:"200px " , width:"400px"}} className="d-inline-flex justify-content-center  m-5" > 
+          <div style={{backgroundColor:"#DCDCDC" , height:"200px " , width:"300px"}} className="d-inline-flex justify-content-between  m-5" > 
            
           
            
