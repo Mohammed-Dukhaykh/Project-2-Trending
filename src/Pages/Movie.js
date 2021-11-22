@@ -6,7 +6,7 @@ function Movie() {
   const { films } = useContext(PostsContext)
   return (
 
-  <body style={{backgroundImage:`url("https://images.pond5.com/film-background-footage-050676340_iconl.jpeg")`,backgroundColor:"black" ,   backgroundAttachment: "fixed" , height:"100%"  }}>
+  <body style={{backgroundImage:`url("https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/5e402bb0-94a3-4e0c-bcb8-be41acaad140/SA-ar-20211115-popsignuptwoweeks-perspective_alpha_website_small.jpg")`,  backgroundAttachment: "fixed" , height:"100%" ,  }}>
     
   
 
@@ -15,7 +15,7 @@ function Movie() {
       {/* <Container style={{margin:"60px"}}> */}
     <Row key={films.id} xs={1} md={2} className="g-5 ">
       {films.map(film => (
-        <Card style={{backgroundColor:"DarkRed", marginLeft:"290px" } } className=" me-1"  >
+        <Card style={{backgroundColor:"black", marginLeft:"300px" } } className=" me-1"  >
           <Row style={{ justifyContent:"space-between"}}>
           <Col>
             <Image className="img-fluid rounded-start" variant="top" src={"https://image.tmdb.org/t/p/w185_and_h278_bestv2" + film.poster_path} />
@@ -23,7 +23,7 @@ function Movie() {
             <Col>
             
             <Card.Body >
-              <Card.Title style={{fontSize:"30px" , textAlign:"center" , color:"black" , fontWeight:"bold" , fontFamily:"serif"  }}>{film.title}</Card.Title>
+              <Card.Title style={{fontSize:"30px" , textAlign:"center" , color:"DarkRed" , fontWeight:"bold" , fontFamily:"serif"  }}>{film.title}</Card.Title>
               <Card.Text style={{overflow:"hidden" , height:"100px" , textAlign:"center" , color:"white"}  } className="mt-5" >
                   {film.overview}
               </Card.Text>
