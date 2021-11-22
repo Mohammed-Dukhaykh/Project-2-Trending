@@ -2,7 +2,7 @@ import { useContext } from "react"
 import {Form , Col , Row , Button} from "react-bootstrap"
 import PostsContext from "../Utils/PostsContext"
 function AddPosts() {
-    const {addPost} = useContext(PostsContext)
+    const {addPost , Profile } = useContext(PostsContext)
   return (
     <Form onSubmit={addPost}>
       <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">

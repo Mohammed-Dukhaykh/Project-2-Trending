@@ -1,24 +1,24 @@
-import { useContext } from "react";
-import PostsContext from "../Utils/PostsContext";
-import {Card} from "react-bootstrap"
+import { useContext } from "react"
+import PostsContext from "../Utils/PostsContext"
+import { Card, Image} from "react-bootstrap"
 
 function TrendingPosts() {
-    const {trndingPost} = useContext(PostsContext)
-    return ( <>
-    {trndingPost.map(item => (
-         <Card style={{ width: '18rem' }}>
-         <Card.Img variant="top" src={item.image} />
-         <Card.Body>
-           <Card.Title>{item.title}</Card.Title>
-           <Card.Text>
-            {item.description}
-           </Card.Text>
+  const { trndingPost, profile } = useContext(PostsContext)
+  if (!profile) return null
+  // const myPosts = trndingPost.filter(item => item._user._id === profile._id )
+  return (
+    <>
+      {trndingPost.map(post => (
+        <Card>
+          <Card.Header>
            
-         </Card.Body>
-       </Card>  
-    ))}
- 
-    </> );
+           <Image src={post._user.photo} height="30px" roundedCircle />
+          
+          </Card.Header>
+        </Card>
+      ))}
+    </>
+  )
 }
 
-export default TrendingPosts;
+export default TrendingPosts
