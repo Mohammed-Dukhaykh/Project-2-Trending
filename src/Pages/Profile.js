@@ -3,6 +3,7 @@ import PostsContext from "../Utils/PostsContext"
 import { Col, Row, Image, Container, Card  , NavDropdown} from "react-bootstrap"
 import Button from "@restart/ui/esm/Button"
 import ModelItem from "../Componets/ModelItem"
+import {AiOutlineComment} from "react-icons/ai"
 
 function Profile() {
   const { trndingPost, profile, handleShow, removePost } = useContext(PostsContext)
@@ -81,7 +82,7 @@ function Profile() {
           <Button onClick={handleShow}  className="dropdown-item" href="#action/3.1">Edit</Button>
         </NavDropdown>
                     <div class="col-lg-15 "><img src={post.image} alt="" class="img-fluid rounded shadow-sm"  />
-                    <p>title: {post.title}</p>
+                    <p> <AiOutlineComment /> {post.title}</p>
                     </div>
                   <ModelItem item={post} />
                 </div>
