@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import PostsContext from "../Utils/PostsContext"
-import { Col, Row, Image, Container, Card } from "react-bootstrap"
+import { Col, Row, Image, Container, Card  , NavDropdown} from "react-bootstrap"
 import Button from "@restart/ui/esm/Button"
 import ModelItem from "../Componets/ModelItem"
 
@@ -72,10 +72,15 @@ function Profile() {
                 <div class="row">
                 {myPost.map(post => (
                     <div class="col col-md-3">
+                        <NavDropdown
+          id="nav-dropdown-dark-example"
+          title="Option"
+          menuVariant="dark"
+        >
+          <Button onClick={removePost} id={post._id } className="dropdown-item" href="#action/3.1">Delete</Button>
+          <Button onClick={handleShow}  className="dropdown-item" href="#action/3.1">Edit</Button>
+        </NavDropdown>
                     <div class="col-lg-10 "><img src={post.image} alt="" class="img-fluid rounded shadow-sm" /></div>
-                    <Button class="btn btn-primary" onClick={handleShow}>Edit</Button>
-                
-                  <Button class="btn btn-danger" onClick={removePost} id={post._id }>Delete</Button>
                   <ModelItem item={post} />
                 </div>
                 ))}
