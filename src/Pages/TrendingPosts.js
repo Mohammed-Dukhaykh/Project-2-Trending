@@ -2,6 +2,7 @@ import { useContext } from "react"
 import PostsContext from "../Utils/PostsContext"
 import { Card, Image, Row, Col, Container } from "react-bootstrap"
 import CardHeader from "react-bootstrap/esm/CardHeader"
+import {AiOutlineComment} from "react-icons/ai"
 
 function TrendingPosts() {
   const { trndingPost, profile } = useContext(PostsContext)
@@ -81,7 +82,7 @@ function TrendingPosts() {
               </CardHeader>
               <img style={{ height: "380px" }} src={post.image} alt="" class="w-100 card-img-top" />
               <figcaption class="p-4 card-img-bottom">
-                <p>{post._user.firstName} : {post.title}</p>
+                <p><AiOutlineComment /> {post._user.firstName} : {post.title}</p>
               </figcaption>
             </figure>
           </div>
