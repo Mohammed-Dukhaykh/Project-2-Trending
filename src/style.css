@@ -63,12 +63,7 @@ img {
 	font-weight: 700;
 	color: #735400;
 	line-height: 1.222;
-	small {
-		display: block;
-		font-size: .75em;
-		font-weight: 400;
-		margin-top: .25em;
-	}
+	
 }
 
 .card-form {
@@ -80,9 +75,7 @@ img {
 	flex-direction: column-reverse;
 	position: relative;
 	padding-top: 1.5rem;
-	&+.input {
-		margin-top: 1.5rem;
-	}
+	
 }
 
 .input-label {
@@ -100,14 +93,7 @@ img {
 	font: inherit;
 	font-size: 1.125rem;
 	padding: .25rem 0;
-	&:focus, &:valid {
-		outline: 0;
-		border-bottom-color: #6658d3;
-		&+.input-label {
-			color: #6658d3;
-			transform: translateY(-1.5rem);
-		}
-	}
+	
 }
 
 .action {
@@ -124,9 +110,7 @@ img {
 	border-radius: 6px;
 	color: #FFF;
 	border: 0;
-	&:focus {
-		outline: 0;
-	}
+	
 }
 
 .card-info {
@@ -134,11 +118,7 @@ img {
 	text-align: center;
 	font-size: .875rem;
 	color: #8597a3;
-	a {
-		display: block;
-		color: #6658d3;
-		text-decoration: none;
-	}
+	
 }
 
 .navtrending123 {
