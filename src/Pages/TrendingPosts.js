@@ -81,7 +81,7 @@ function TrendingPosts() {
               </CardHeader>
               <img style={{ height: "380px" }} src={post.image} alt="" class="w-100 card-img-top" />
               <figcaption class="p-4 card-img-bottom">
-                <p>{post.title}</p>
+                <p>{post._user.firstName} : {post.title}</p>
               </figcaption>
             </figure>
           </div>
