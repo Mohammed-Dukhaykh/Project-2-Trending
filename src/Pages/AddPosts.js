@@ -5,17 +5,7 @@ import"../style.css"
 function AddPosts() {
     const {addPost , Profile } = useContext(PostsContext)
   return (
-    <div  style={{
-     
-      backgroundImage: "linear-gradient(to right,AntiqueWhite, Bisque)",
-      backgroundPosition: "center",
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-      minHeight:"100vh" ,
-      backgroundAttachment:"fixed" ,
-      display:"flex"
-      
-    }} >
+    <div class="addpostdiv123" >
     
     <div class="card123">
       <div class="card-image">	

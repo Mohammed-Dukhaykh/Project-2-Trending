@@ -1,12 +1,12 @@
-import CarousolItem from "../Componets/Carousol";
+import HeaderItem from "../Componets/HeaderItem";
 import Category from "../Componets/Category";
 import NavbarItem from "../Componets/NavbarItem";
 
 function Home() {
     return ( <>
     
-    <div style={{backgroundColor:"Gainsboro"}}>
-      <CarousolItem />
+    <div class="homepage12">
+      <HeaderItem />
     <Category />
 
     </div>

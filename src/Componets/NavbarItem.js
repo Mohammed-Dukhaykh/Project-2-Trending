@@ -3,6 +3,7 @@ import { FaHome } from "react-icons/fa"
 import { CgLogIn } from "react-icons/cg"
 import { BsArrowBarRight, BsArrowBarUp , BsArrowBarLeft } from "react-icons/bs"
 import {CgProfile , CgLogOff} from "react-icons/cg"
+import {BiCategory} from "react-icons/bi"
 import { Link } from "react-router-dom"
 import { useContext } from "react"
 import PostsContext from "../Utils/PostsContext"
@@ -14,6 +15,7 @@ function NavbarItem() {
   return (
     <Navbar className="navtrending123" collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
+        
         <Navbar.Brand href="#home">Trending</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -24,7 +26,9 @@ function NavbarItem() {
             <Link to="/tending-posts" className="nav-link ">
               People Trendng
             </Link>
-            <NavDropdown title="Category" id="collasible-nav-dropdown">
+           
+           
+            <NavDropdown title='Category'  id="collasible-nav-dropdown">
               <Link to="/films" className="dropdown-item">
                 Movies
               </Link>
@@ -41,6 +45,7 @@ function NavbarItem() {
                 Music
               </Link>
             </NavDropdown>
+           
             {/* </Nav> */}
             {localStorage.postToken ? (
               // <Nav className="me-auto">

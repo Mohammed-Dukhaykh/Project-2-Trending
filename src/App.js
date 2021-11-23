@@ -1,6 +1,6 @@
 import Category from "./Componets/Category"
 import NavbarItem from "./Componets/NavbarItem"
-import CarousolItem from "./Componets/Carousol"
+import HeaderItem from "./Componets/HeaderItem"
 import { useEffect, useState } from "react"
 import axios from "axios"
 import { Route, Routes, useNavigate } from "react-router"

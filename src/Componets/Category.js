@@ -1,25 +1,26 @@
 import { Card, Row, Col, Container, Button, Image } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { BsChevronRight } from "react-icons/bs"
+import "../style.css"
 function Category() {
   return (
     <>
       <Container>
-        <Card.Header style={{fontSize:"60px" , fontWeight:"bold" , letterSpacing:"4px" ,  lineHeight:"2"}} as="h1" className="text-center"  >All Sections </Card.Header>
+        <Card.Header className="categoryTrending123" as="h1"  >All Sections </Card.Header>
         <Card className="mt-5">
           <Row>
             <Col>
               <Card.Img src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3137890%2Fpexels-photo-3137890.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D2%26h%3D650%26w%3D940" />
             </Col>
-            <Col className="">
-              <Card.Body className="mt-5 d-flex flex-column align-items-center">
-                <Card.Title style={{ fontSize: "50px", fontWeight: "bolder" }}>Movies</Card.Title>
+            <Col >
+              <Card.Body  className="mt-5 d-flex flex-column align-items-center">
+                <Card.Title class="titletrending123">Movies</Card.Title>
                 <Card.Text className="mt-5" style={{ textAlign: "center" }}>
                   This Section Includes many Trending Movies And Box Office Movies And Best Movies Right Now .
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="mt-4">
-                <div className="d-flex align-items-center justify-content-center">
+                <div class="categorydiv123" >
                   <Link
                     style={{ textDecoration: "none", color: "black", fontSize: "30px", fontWeight: "bolder" }}
                     to="/films"
@@ -37,14 +38,14 @@ function Category() {
           <Row>
             <Col>
               <Card.Body className="mt-5 d-flex flex-column align-items-center">
-                <Card.Title  style={{ fontSize: "50px", fontWeight: "bolder" }}>Gaming</Card.Title>
+                <Card.Title class="titletrending123"  >Gaming</Card.Title>
                 <Card.Text  className="mt-5" style={{ textAlign: "center" }}>
                     In This Section You Can Watch All Trending Games And Best Games Right Now And Many 
                     Type of Games Like Football Games And War Games and other Type.
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="mt-4">
-                <div className="d-flex align-items-center justify-content-center">
+                <div class="categorydiv123" >
                   <Link
                     style={{ textDecoration: "none", color: "black", fontSize: "30px", fontWeight: "bolder" }}
                     to="/games"
@@ -67,14 +68,14 @@ function Category() {
             </Col>
             <Col>
               <Card.Body className="mt-5 d-flex flex-column align-items-center">
-                <Card.Title  style={{ fontSize: "50px", fontWeight: "bolder" }}>Books</Card.Title>
+                <Card.Title class="titletrending123">Books</Card.Title>
                 <Card.Text className="mt-5" style={{ textAlign: "center" }}>
                   You Can Watch In This Section Many Types Of Types Like History Books And Classics Books And Detective and Mystery
                   Books And Fantasy Books And Horror Books .
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="mt-4">
-                <div className="d-flex align-items-center justify-content-center">
+                <div class="categorydiv123">
                   <Link
                     style={{ textDecoration: "none", color: "black", fontSize: "30px", fontWeight: "bolder" }}
                     to="/books"
@@ -91,14 +92,14 @@ function Category() {
           <Row>
             <Col>
               <Card.Body className="mt-5 d-flex flex-column align-items-center">
-                <Card.Title  style={{ fontSize: "50px", fontWeight: "bolder" }}>Sports</Card.Title>
+                <Card.Title class="titletrending123" >Sports</Card.Title>
                 <Card.Text className="mt-5" style={{ textAlign: "center" }} >
                  This Section Includes All Sports Trending And There Are Many Sports Like Football And Running 
                  And Swimming And Road Cycling And Horse competition And Other Sports .
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="mt-4">
-                <div className="d-flex align-items-center justify-content-center">
+                <div class="categorydiv123">
                   <Link
                     style={{ textDecoration: "none", color: "black", fontSize: "30px", fontWeight: "bolder" }}
                     to="/football"
@@ -121,14 +122,14 @@ function Category() {
             </Col>
             <Col>
               <Card.Body className="mt-5 d-flex flex-column align-items-center">
-                <Card.Title style={{ fontSize: "50px", fontWeight: "bolder" }}>Music</Card.Title>
+                <Card.Title class="titletrending123">Music</Card.Title>
                 <Card.Text className="mt-5" style={{ textAlign: "center" }}>
                  This Section You Will Found All Top Music Right Now And You Can Watch All Trending Music 
                  And You Can To Listen To Music From The Link In Page .
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="mt-4">
-                <div className="d-flex align-items-center justify-content-center">
+                <div class="categorydiv123">
                   <Link
                     style={{ textDecoration: "none", color: "black", fontSize: "30px", fontWeight: "bolder" }}
                     to="/music"

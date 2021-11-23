@@ -14,7 +14,7 @@ function ModelItem(props) {
         <Modal.Header closeButton>
           <Modal.Title>Edit post</Modal.Title>
         </Modal.Header>
-        <Form style={{display:"flex" , flexDirection:"column" , padding:"30px 70px" , justifyContent:"center" , gap:"10px"}}  onSubmit={e => {
+        <Form  style={{display:"flex" , flexDirection:"column" , padding:"30px 70px" , justifyContent:"center" , gap:"10px"}}  onSubmit={e => {
             confirmPost(e,item._id)
             handleClose()
         }}>

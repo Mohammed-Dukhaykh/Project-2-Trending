@@ -133,6 +133,265 @@ img {
 .modeltrending {
     margin: 60px !important;
 }
+.categoryTrending123 {
+	font-size: 60px !important;
+	font-weight: bold !important;
+	letter-spacing: 4px !important;
+	line-height: 2 !important;
+	text-align: center !important;
+}
+.titletrending123 {
+	font-size: 50px !important;
+	font-weight: bolder !important;
+}
+.categorydiv123 {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+.headerpage123 {
+	background-image:url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500") ;
+	height: 600px;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.titleshare123 {
+	font-size: 80px;
+	font-weight: bolder;
+}
 
+.paragshare123 {
+	font-size: 20px;
+}
+.addpostdiv123 {
+	background-image: linear-gradient(to right,AntiqueWhite, Bisque);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	background-attachment: fixed;
+	display: flex;
+}
+.bookpagetrend123 {
+	background-image: url("https://images.pexels.com/photos/1907785/pexels-photo-1907785.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+	min-height: 100vh;
+}
+.bookcontains123 {
+	padding: 20px;
+	background-color:black;
+}
+.booktitletrend12 {
+	color: white;
+	font-weight: bolder;
+	font-size: 50px;
+	letter-spacing: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+.bookbodytrend12 {
+	background-color: white;
+	height: 200px;
+	width: 300px;
+	display: inline-flex;
+	justify-content: space-between;
+	margin: 50px;
+}
+.footballdiv123 {
+	background-image: linear-gradient(to right,#C0C0C0, #F5F5F5);
+}
+.footballtitle12 {
+	text-align: center;
+	font-family: monospace;
+}
 
+.gamespage12 {
+	background-image: url("https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.titlegames12 {
+	text-align: center;
+	color: indianred;
+	font-family: cursive;
+	font-size: 50px;
+}
+.cardtitlegame {
+	text-align: center;
+}
+.homepage12 {
+	background-color: Gainsboro;
+}
+.loginpage12 {
+	display: flex;
+	justify-content: center;
+	background-attachment: fixed;
+	background-image: url("https://images.pexels.com/photos/212372/pexels-photo-212372.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+.loginform12 {
+	width: 500px;
+	height: 100vh;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	padding-bottom: 1px;
+	background-image: url("https://images.pexels.com/photos/5274203/pexels-photo-5274203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+.logintitle12 {
+	text-align: center;
+}
+.btnForm12 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 60px;
+}
+.bodymovie12 {
+	background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/5e402bb0-94a3-4e0c-bcb8-be41acaad140/SA-ar-20211115-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+	background-attachment: fixed;
+	height: 100%;
+}
+.moviecard12 {
+	background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/5e402bb0-94a3-4e0c-bcb8-be41acaad140/SA-ar-20211115-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+	background-color: black;
+	background-attachment: fixed;
+	height: 100%;
+}
+.movietitle12 {
+	font-size: 30px;
+	text-align: center;
+	color: darkred;
+	font-weight: bold;
+	font-family: serif;
+}
+.movieoverview12 {
+	overflow: hidden;
+	height: 100px;
+	text-align: center;
+	color: white;
+	margin-top: 50px;
+}
+.moviedesc12 {
+	text-align: center;
+	font-style: italic;
+	color: GhostWhite;
+}
+.sectionmusic {
+	min-height: 100vh;
+	background-image: linear-gradient(90deg, rgba(0,64,218,1) 0%, rgba(0,74,255,1) 0%, rgba(0,64,218,1) 0%, rgba(63,78,116,1) 0%, rgba(8,14,29,1) 100%, rgba(0,74,255,1) 100%);
+}
+.musictitle {
+	color: white;
+	font-size: 60px;
+	text-align: center;
+}
+.musicdetail {
+	display: flex;
+	flex-direction: column;
+}
+.btnmusic {
+	display: inline;
+	padding: 20px 20px;
+}
+.postcard123 {
+	display: flex;
+	background-image: linear-gradient(90deg, rgba(0,64,218,1) 0%, rgba(0,74,255,1) 0%, rgba(0,64,218,1) 0%, rgba(0,74,255,1) 0%, rgba(63,78,116,1) 0%, rgba(26,40,77,1) 33%);
+	align-items: center;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 40px;
+	border-radius: 10px;
+	gap: 200px;
+}
+.musicname123 {
+	color: white;
+}
+
+#profilepage12 {
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-image: linear-gradient(to right, #e96443, #904e95);
+}
+#profiledetails {
+	background-position: center;
+	background-size: cover;
+	background-image: url("https://images.unsplash.com/photo-1530305408560-82d13781b33a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
+}
+.personalprofile {
+	align-items: flex-end ;
+	display: flex;
+	justify-content: space-around;
+}
+.profilenames12 {
+	color: white;
+	margin-top: 0%;
+	margin-bottom: 0%;
+}
+.profileposts {
+	display: flex;
+	justify-content:space-between ;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.signup123 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-image:-webkit-linear-gradient(136deg, rgb(0,0,70) 0%, rgb(28,181,224) 100%) ;
+	height: 100%;
+	background-attachment: fixed;
+}
+.signupcontainer12 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 25px;
+	border-radius: 20px;
+}
+.formdiv12 {
+	background-color: white;
+}
+.divsignup1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.trendingpost {
+	background-image: linear-gradient(90deg, rgba(200,82,186,1) 0%, rgba(92,157,209,1) 0%, rgba(70,29,65,1) 0%, rgba(56,70,77,1) 0%, rgba(66,113,136,1) 81%, rgba(64,104,124,1) 100%);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	background-attachment: fixed;
+	padding: 0px 25px;
+}
+.trendingpagehead {
+	background-image: url("https://images.pexels.com/photos/306763/pexels-photo-306763.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	height: 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.9;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;	
+}
+.trendingtitle {
+	color: white;
+	font-size: 80px;
+	font-weight: bolder;
+	text-align: center;
+
+}
+
+.trendingdetails {
+	color: white;
+	margin-bottom: 0px;
+	font-style: italic;
+}
