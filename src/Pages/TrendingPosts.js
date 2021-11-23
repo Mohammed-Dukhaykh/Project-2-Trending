@@ -35,8 +35,8 @@ function TrendingPosts() {
 
     <div
       style={{
-        backgroundColor:"black" ,
-        backgroundImage: `url("")`,
+        backgroundColor:"" ,
+        backgroundImage: `linear-gradient(90deg, rgba(200,82,186,1) 0%, rgba(92,157,209,1) 0%, rgba(70,29,65,1) 0%, rgba(56,70,77,1) 0%, rgba(66,113,136,1) 81%, rgba(64,104,124,1) 100%)`,
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
