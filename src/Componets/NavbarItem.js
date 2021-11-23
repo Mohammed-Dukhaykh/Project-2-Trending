@@ -2,7 +2,7 @@ import { Nav, Navbar, Container, NavDropdown, Image , Dropdown } from "react-boo
 import { FaHome } from "react-icons/fa"
 import { CgLogIn } from "react-icons/cg"
 import { BsArrowBarRight, BsArrowBarUp , BsArrowBarLeft } from "react-icons/bs"
-import {CgProfile} from "react-icons/cg"
+import {CgProfile , CgLogOff} from "react-icons/cg"
 import { Link } from "react-router-dom"
 import { useContext } from "react"
 import PostsContext from "../Utils/PostsContext"
@@ -14,11 +14,10 @@ function NavbarItem() {
   return (
     <Navbar className="navtrending123" collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        {/* <Image src="https://pbs.twimg.com/media/FEt7_UHWQAQuKqp?format=png&name=240x240" height="80px" /> */}
         <Navbar.Brand href="#home">Trending</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto ">
+          <Nav className="me-auto   ">
             <Link to="/" className="nav-link ">
               Home
             </Link>
@@ -55,7 +54,7 @@ function NavbarItem() {
           {localStorage.postToken ? (
             <Nav>
               <Link onClick={logout} to="/" className=" nav-link">
-               <BsArrowBarLeft /> Logout
+               <CgLogOff /> Logout
               </Link>
               <Link className="nav-link" to="/profile" eventKey={2}>
                 <CgProfile /> Profile
