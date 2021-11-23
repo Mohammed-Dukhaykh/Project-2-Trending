@@ -24,7 +24,7 @@ function CarousolItem() {
           </Col>
           <Col>
           <div>
-          <img src="https://pbs.twimg.com/media/FEkNfCyXEAEYSF2?format=png&name=small" height="400px" />
+          <img src="https://pbs.twimg.com/media/FE06UOyXIAobLU5?format=png&name=small" height="400px" />
           </div>
           </Col>
         </Row>
