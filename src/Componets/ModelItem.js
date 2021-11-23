@@ -2,13 +2,15 @@ import Button from "@restart/ui/esm/Button";
 import { useContext } from "react";
 import { Modal , Form ,Row , Col  } from "react-bootstrap";
 import PostsContext from "../Utils/PostsContext";
+import "../style.css"
 
 
 function ModelItem(props) {
     const {item} = props
     const {show , handleClose , handleShow , confirmPost } = useContext(PostsContext)
 
-    return (   <Modal show={show} onHide={handleClose}>
+    return (   
+    <Modal className="modeltrending"   show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
@@ -36,7 +38,8 @@ function ModelItem(props) {
     Share
   </Button>
     </Form>
-      </Modal> );
+      </Modal>
+       );
 }
 
 export default ModelItem;
