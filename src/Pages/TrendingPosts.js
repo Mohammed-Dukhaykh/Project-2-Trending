@@ -5,7 +5,7 @@ import CardHeader from "react-bootstrap/esm/CardHeader"
 
 function TrendingPosts() {
   const { trndingPost, profile } = useContext(PostsContext)
-  if (!profile) return null
+  
   // const myPosts = trndingPost.filter(item => item._user._id === profile._id )
   return (
     // <Container>
@@ -43,6 +43,7 @@ function TrendingPosts() {
         minHeight:"100vh" ,
         backgroundAttachment:"fixed"
       }}
+      className="divtrendingpost"
       class=" p-5"
     >
       <header

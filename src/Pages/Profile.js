@@ -64,14 +64,14 @@ function Profile() {
                     <p class="font-italic mb-0">This is my account, I hope you like it</p>
                 </div>
             </div>
-           
+         
             <div class="py-4 px-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
                     <h5 class="mb-0">My Trends</h5>
                 </div>
                 <div class="row">
                 {myPost.map(post => (
-                    <div class="col col-md-3">
+                    <div class="col col-md-4">
                         <NavDropdown
           id="nav-dropdown-dark-example"
           title="Option"
@@ -80,13 +80,14 @@ function Profile() {
           <Button onClick={removePost} id={post._id } className="dropdown-item" href="#action/3.1">Delete</Button>
           <Button onClick={handleShow}  className="dropdown-item" href="#action/3.1">Edit</Button>
         </NavDropdown>
-                    <div class="col-lg-10 "><img src={post.image} alt="" class="img-fluid rounded shadow-sm" /></div>
+                    <div class="col-lg-15 "><img src={post.image} alt="" class="img-fluid rounded shadow-sm"  /></div>
                   <ModelItem item={post} />
                 </div>
                 ))}
                 </div>
                 
             </div>
+         
         </div>
     </div>
 </div>

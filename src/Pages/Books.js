@@ -11,9 +11,9 @@ function Books() {
           <div
             className=" p-5 "
             style={{
-              backgroundColor: "",
+              backgroundColor: "black",
               // backgroundImage: `url("https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")`,
-              backgroundImage:"linear-gradient(90deg, rgba(0,64,218,1) 0%, rgba(0,0,0,1) 0%, rgba(63,78,116,1) 100%, rgba(8,14,29,1) 100%, rgba(0,74,255,1) 100%)"
+              // backgroundImage:"linear-gradient(90deg, rgba(0,64,218,1) 0%, rgba(0,0,0,1) 0%, rgba(63,78,116,1) 100%, rgba(8,14,29,1) 100%, rgba(0,74,255,1) 100%)"
             }}
           >
             <h1

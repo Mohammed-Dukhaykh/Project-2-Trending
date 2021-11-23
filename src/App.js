@@ -195,6 +195,7 @@ function App() {
   }
   const logout = () => {
     localStorage.removeItem("postToken")
+    getTrendingPosts()
     navigate("/")
   }
   const addPost = async (e) => {
