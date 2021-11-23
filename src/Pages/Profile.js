@@ -80,7 +80,9 @@ function Profile() {
           <Button onClick={removePost} id={post._id } className="dropdown-item" href="#action/3.1">Delete</Button>
           <Button onClick={handleShow}  className="dropdown-item" href="#action/3.1">Edit</Button>
         </NavDropdown>
-                    <div class="col-lg-15 "><img src={post.image} alt="" class="img-fluid rounded shadow-sm"  /></div>
+                    <div class="col-lg-15 "><img src={post.image} alt="" class="img-fluid rounded shadow-sm"  />
+                    <p>title: {post.title}</p>
+                    </div>
                   <ModelItem item={post} />
                 </div>
                 ))}

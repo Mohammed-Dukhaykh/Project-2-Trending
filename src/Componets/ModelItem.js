@@ -8,32 +8,32 @@ function ModelItem(props) {
     const {item} = props
     const {show , handleClose , handleShow , confirmPost } = useContext(PostsContext)
 
-    return (   <Modal show={show} onHide={handleClose}>
+    return (   <Modal  show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Edit post</Modal.Title>
         </Modal.Header>
-        <Form onSubmit={e => {
+        <Form style={{display:"flex" , flexDirection:"column" , padding:"30px 70px" , justifyContent:"center" , gap:"10px"}}  onSubmit={e => {
             confirmPost(e,item._id)
             handleClose()
         }}>
       <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-        <Form.Label column sm="2">
+        <Form.Label style={{marginRight:"40px"}} column sm="2">
           Images
         </Form.Label>
         <Col sm="10">
           <Form.Control type="url" name="image" required defaultValue={item.image} />
         </Col>
       </Form.Group>
-      <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
-    <Form.Label column sm="2">
+      <Form.Group  as={Row} className="mb-3" controlId="formPlaintextPassword">
+    <Form.Label style={{marginRight:"40px"}}  column sm="2">
       Description
     </Form.Label>
     <Col sm="10">
     <Form.Control as="textarea" rows={3} name="description" required defaultValue={item.title} />
     </Col>
   </Form.Group>
-  <Button variant="primary" type="submit">
-    Share
+  <Button className="btn btn-primary" variant="primary" type="submit">
+    confirm
   </Button>
     </Form>
       </Modal> );
