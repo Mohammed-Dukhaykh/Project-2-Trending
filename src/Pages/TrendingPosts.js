@@ -17,13 +17,14 @@ function TrendingPosts() {
       <div class="logoImg123">
         <img  src="https://pbs.twimg.com/media/FE8GAFsX0AMX9q3?format=png&name=900x900"/>
         </div>
+        <br />
       <div class="row">
         <div class="col-lg-11 mx-auto"></div>
       </div>
-      <div class="row py-5">
+      <div  class="row py-8">
         {trndingPost.map(post => (
           <div class="col-lg-4">
-            <figure class="rounded p-3 bg-white shadow-sm">
+            <figure class="posttrends1234" >
               <CardHeader>
                 <div className="d-flex justify-content-around">
                   <Image src={post._user.photo} roundedCircle height="60px" />
