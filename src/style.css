@@ -367,11 +367,10 @@ img {
 	background-repeat: no-repeat;
 	height: 100%;
 	background-attachment: fixed;
-	padding: 0px 25px;
 	display: flex;
 	flex-direction: column;
 }
-.trendingpagehead {
+/* .trendingpagehead {
 	background-image: url("https://images.pexels.com/photos/306763/pexels-photo-306763.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 	height: 400px;
 	background-position: center;
@@ -383,7 +382,7 @@ img {
 	flex-direction: column;
 	justify-content: center;
 	position: relative;	
-}
+} */
 .trendingtitle {
 	color: white;
 	font-size: 80px;
@@ -408,4 +407,13 @@ img {
 	background-color: white;
 	border-radius: 60px;
 	
+}
+.h1Carousel{
+	font-size: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 150px ;
+	font-family: 'Times New Roman', Times, serif;
 }
