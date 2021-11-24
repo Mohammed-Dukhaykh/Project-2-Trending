@@ -87,7 +87,7 @@ function TrendingPosts() {
       <div class="row">
         <div class="col-lg-11 mx-auto"></div>
       </div>
-      <div  class="row py-5 px-5">
+      <div  class="row m-0 py-5 px-5">
         {trndingPost.map(post => (
           <div class="col-lg-4">
             <figure class="posttrends1234" >
