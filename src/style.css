@@ -1,5 +1,5 @@
 .mosab {
-    color: blue;
+	color: blue;
 }
 
 /* .dark {
@@ -39,7 +39,7 @@ img {
 	border-radius: 10px;
 	box-shadow: 0 10px 20px 0 rgba(#999, .25);
 	padding: .75rem;
-    background-image:"linear-gradient(to right,#C0C0C0, #F5F5F5)";
+	background-image: "linear-gradient(to right,#C0C0C0, #F5F5F5)";
 
 }
 
@@ -63,7 +63,7 @@ img {
 	font-weight: 700;
 	color: #735400;
 	line-height: 1.222;
-	
+
 }
 
 .card-form {
@@ -75,7 +75,7 @@ img {
 	flex-direction: column-reverse;
 	position: relative;
 	padding-top: 1.5rem;
-	
+
 }
 
 .input-label {
@@ -89,11 +89,11 @@ img {
 	border: 0;
 	z-index: 1;
 	background-color: transparent;
-	border-bottom: 2px solid #eee; 
+	border-bottom: 2px solid #eee;
 	font: inherit;
 	font-size: 1.125rem;
 	padding: .25rem 0;
-	
+
 }
 
 .action {
@@ -110,7 +110,7 @@ img {
 	border-radius: 6px;
 	color: #FFF;
 	border: 0;
-	
+
 }
 
 .card-info {
@@ -118,21 +118,24 @@ img {
 	text-align: center;
 	font-size: .875rem;
 	color: #8597a3;
-	
+
 }
 
 .navtrending123 {
-    background-color: transparent !important;
-    z-index: 10 !important;
+	background-color: transparent !important;
+	z-index: 10 !important;
 }
+
 .divtrendingpost {
-    position: relative !important;
-    top: 0 !important;
+	position: relative !important;
+	top: 0 !important;
 
 }
+
 .modeltrending {
-    margin: 60px !important;
+	margin: 60px !important;
 }
+
 .categoryTrending123 {
 	font-size: 60px !important;
 	font-weight: bold !important;
@@ -140,23 +143,27 @@ img {
 	line-height: 2 !important;
 	text-align: center !important;
 }
+
 .titletrending123 {
 	font-size: 50px !important;
 	font-weight: bolder !important;
 }
+
 .categorydiv123 {
 	display: flex !important;
 	justify-content: center !important;
 	align-items: center !important;
 }
+
 .headerpage123 {
-	background-image:url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500") ;
+	background-image: url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
 	height: 600px;
 	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+
 .titleshare123 {
 	font-size: 80px;
 	font-weight: bolder;
@@ -165,8 +172,9 @@ img {
 .paragshare123 {
 	font-size: 20px;
 }
+
 .addpostdiv123 {
-	background-image: linear-gradient(to right,AntiqueWhite, Bisque);
+	background-image: linear-gradient(to right, AntiqueWhite, Bisque);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -174,14 +182,17 @@ img {
 	background-attachment: fixed;
 	display: flex;
 }
+
 .bookpagetrend123 {
 	background-image: url("https://images.pexels.com/photos/1907785/pexels-photo-1907785.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
 	min-height: 100vh;
 }
+
 .bookcontains123 {
 	padding: 20px;
-	background-color:black;
+	background-color: black;
 }
+
 .booktitletrend12 {
 	color: white;
 	font-weight: bolder;
@@ -200,9 +211,11 @@ img {
 	justify-content: space-between;
 	margin: 50px;
 }
+
 .footballdiv123 {
-	background-image: linear-gradient(to right,#C0C0C0, #F5F5F5);
+	background-image: linear-gradient(to right, #C0C0C0, #F5F5F5);
 }
+
 .footballtitle12 {
 	text-align: center;
 	font-family: monospace;
@@ -213,18 +226,22 @@ img {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+
 .titlegames12 {
 	text-align: center;
 	color: indianred;
 	font-family: cursive;
 	font-size: 50px;
 }
+
 .cardtitlegame {
 	text-align: center;
 }
+
 .homepage12 {
 	background-color: Gainsboro;
 }
+
 .loginpage12 {
 	display: flex;
 	justify-content: center;
@@ -240,26 +257,31 @@ img {
 	padding-bottom: 1px;
 	background-image: url("https://images.pexels.com/photos/5274203/pexels-photo-5274203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 }
+
 .logintitle12 {
 	text-align: center;
 }
+
 .btnForm12 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-top: 60px;
 }
+
 .bodymovie12 {
 	background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/5e402bb0-94a3-4e0c-bcb8-be41acaad140/SA-ar-20211115-popsignuptwoweeks-perspective_alpha_website_small.jpg");
 	background-attachment: fixed;
 	height: 100%;
 }
+
 .moviecard12 {
 	background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/5e402bb0-94a3-4e0c-bcb8-be41acaad140/SA-ar-20211115-popsignuptwoweeks-perspective_alpha_website_small.jpg");
 	background-color: black;
 	background-attachment: fixed;
 	height: 100%;
 }
+
 .movietitle12 {
 	font-size: 30px;
 	text-align: center;
@@ -267,6 +289,7 @@ img {
 	font-weight: bold;
 	font-family: serif;
 }
+
 .movieoverview12 {
 	overflow: hidden;
 	height: 100px;
@@ -274,31 +297,37 @@ img {
 	color: white;
 	margin-top: 50px;
 }
+
 .moviedesc12 {
 	text-align: center;
 	font-style: italic;
 	color: GhostWhite;
 }
+
 .sectionmusic {
 	min-height: 100vh;
-	background-image: linear-gradient(90deg, rgba(0,64,218,1) 0%, rgba(0,74,255,1) 0%, rgba(0,64,218,1) 0%, rgba(63,78,116,1) 0%, rgba(8,14,29,1) 100%, rgba(0,74,255,1) 100%);
+	background-image: linear-gradient(90deg, rgba(0, 64, 218, 1) 0%, rgba(0, 74, 255, 1) 0%, rgba(0, 64, 218, 1) 0%, rgba(63, 78, 116, 1) 0%, rgba(8, 14, 29, 1) 100%, rgba(0, 74, 255, 1) 100%);
 }
+
 .musictitle {
 	color: white;
 	font-size: 60px;
 	text-align: center;
 }
+
 .musicdetail {
 	display: flex;
 	flex-direction: column;
 }
+
 .btnmusic {
 	display: inline;
 	padding: 20px 20px;
 }
+
 .postcard123 {
 	display: flex;
-	background-image: linear-gradient(90deg, rgba(0,64,218,1) 0%, rgba(0,74,255,1) 0%, rgba(0,64,218,1) 0%, rgba(0,74,255,1) 0%, rgba(63,78,116,1) 0%, rgba(26,40,77,1) 33%);
+	background-image: linear-gradient(90deg, rgba(0, 64, 218, 1) 0%, rgba(0, 74, 255, 1) 0%, rgba(0, 64, 218, 1) 0%, rgba(0, 74, 255, 1) 0%, rgba(63, 78, 116, 1) 0%, rgba(26, 40, 77, 1) 33%);
 	align-items: center;
 	background-position: center;
 	background-size: cover;
@@ -306,6 +335,7 @@ img {
 	border-radius: 10px;
 	gap: 200px;
 }
+
 .musicname123 {
 	color: white;
 }
@@ -316,35 +346,41 @@ img {
 	background-size: cover;
 	background-image: linear-gradient(to right, #e96443, #904e95);
 }
+
 #profiledetails {
 	background-position: center;
 	background-size: cover;
 	background-image: url("https://images.unsplash.com/photo-1530305408560-82d13781b33a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
 }
+
 .personalprofile {
-	align-items: flex-end ;
+	align-items: flex-end;
 	display: flex;
 	justify-content: space-around;
 }
+
 .profilenames12 {
 	color: white;
 	margin-top: 0%;
 	margin-bottom: 0%;
 }
+
 .profileposts {
 	display: flex;
-	justify-content:space-between ;
+	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 10px;
 }
+
 .signup123 {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	background-image:-webkit-linear-gradient(136deg, rgb(0,0,70) 0%, rgb(28,181,224) 100%) ;
+	background-image: -webkit-linear-gradient(136deg, rgb(0, 0, 70) 0%, rgb(28, 181, 224) 100%);
 	height: 100%;
 	background-attachment: fixed;
 }
+
 .signupcontainer12 {
 	display: flex;
 	flex-direction: row;
@@ -352,16 +388,19 @@ img {
 	margin: 25px;
 	border-radius: 20px;
 }
+
 .formdiv12 {
 	background-color: white;
 }
+
 .divsignup1 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+
 .trendingpost {
-	background-image: linear-gradient(90deg, rgba(200,82,186,1) 0%, rgba(92,157,209,1) 0%, rgba(70,29,65,1) 0%, rgba(56,70,77,1) 0%, rgba(66,113,136,1) 81%, rgba(64,104,124,1) 100%);
+	background-image: linear-gradient(90deg, rgba(200, 82, 186, 1) 0%, rgba(92, 157, 209, 1) 0%, rgba(70, 29, 65, 1) 0%, rgba(56, 70, 77, 1) 0%, rgba(66, 113, 136, 1) 81%, rgba(64, 104, 124, 1) 100%);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -370,6 +409,7 @@ img {
 	display: flex;
 	flex-direction: column;
 }
+
 /* .trendingpagehead {
 	background-image: url("https://images.pexels.com/photos/306763/pexels-photo-306763.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 	height: 400px;
@@ -396,24 +436,27 @@ img {
 	margin-bottom: 0px;
 	font-style: italic;
 }
-.logoImg123{
+
+.logoImg123 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
+
 .posttrends1234 {
 	padding: 13px;
-	background-color: white;
+	background-color: #BDD4E7;
+	background-image: linear-gradient(315deg, #BDD4E7 0%, #8693AB 74%);
 	border-radius: 60px;
-	
 }
-.h1Carousel{
+
+.h1Carousel {
 	font-size: 50px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 150px ;
+	margin-bottom: 150px;
 	font-family: 'Times New Roman', Times, serif;
 }
