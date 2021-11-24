@@ -6,6 +6,9 @@ function Category() {
   return (
     <>
       <Container>
+        <div class="logoImg123">
+        <img  src="https://pbs.twimg.com/media/FE8GAFsX0AMX9q3?format=png&name=900x900"/>
+        </div>
         <Card.Header className="categoryTrending123" as="h1"  >All Sections </Card.Header>
         <Card className="mt-5">
           <Row>

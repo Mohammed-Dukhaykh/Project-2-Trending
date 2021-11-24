@@ -14,6 +14,9 @@ function TrendingPosts() {
         <h1 class="trendingtitle">People Trending</h1>
         <p class="trendingdetails">Share Your Trending And Make The Others To See Your Posts .</p>
       </header>
+      <div class="logoImg123">
+        <img  src="https://pbs.twimg.com/media/FE8GAFsX0AMX9q3?format=png&name=900x900"/>
+        </div>
       <div class="row">
         <div class="col-lg-11 mx-auto"></div>
       </div>
