@@ -2,8 +2,8 @@ import { useContext } from "react"
 import PostsContext from "../Utils/PostsContext"
 import { Col, Row, Card, Container } from "react-bootstrap"
 import "../style.css"
-function Football() {
-  const { football } = useContext(PostsContext)
+function Sports() {
+  const { sports } = useContext(PostsContext)
   return (
     <div class="footballdiv123">
       <br /> <br />
@@ -11,7 +11,7 @@ function Football() {
       <br /> <br />
       <Container>
         <Row xs={1} md={4} className="g-4">
-          {football.map(item => (
+          {sports.map(item => (
             <div class="col-md-6">
               <div class="card flex-md-row mb-4 shadow-sm h-md-250" style={{ backgroundColor: "#E6E6FA" }}>
                 <div class="card-body d-flex flex-column align-items-start">
@@ -34,4 +34,4 @@ function Football() {
   )
 }
 
-export default Football
+export default Sports

@@ -9,7 +9,7 @@ import PostsContext from "./Utils/PostsContext"
 import Home from "./Pages/Home"
 import Books from "./Pages/Books"
 import GamingItems from "./Pages/Gaming"
-import Football from "./Pages/Football"
+import Sports from "./Pages/Sports"
 import MusicItems from "./Pages/Music"
 import Signup from "./Pages/Signup"
 import Login from "./Pages/Login"
@@ -25,7 +25,7 @@ function App() {
   const [games, setGames] = useState([])
   const [music, setMusic] = useState([])
   const [profile, setProfile] = useState(null)
-  const [football, setFootball] = useState([])
+  const [sports, setSports] = useState([])
   const [show, setShow] = useState(false)
   const navigate = useNavigate()
   // End Comment
@@ -213,10 +213,10 @@ function App() {
   // End Comment
 
   // This Is Axios get for get sports
-  const getFootball = async () => {
+  const getSports = async () => {
     const response = await axios.get("https://sports.api.decathlon.com/sports")
     const attributesItems = response.data.data
-    setFootball(attributesItems)
+    setSports(attributesItems)
   }
   // End Comment
 
@@ -251,7 +251,7 @@ function App() {
     getFilms()
     getBooks()
     getGames()
-    getFootball()
+    getSports()
     getMusic()
     if (localStorage.postToken) {
       getProfile()
@@ -265,7 +265,7 @@ function App() {
     films: films,
     books: books,
     games: games,
-    football: football,
+    sports: sports,
     music: music,
     signup: signup,
     login: login,
@@ -289,7 +289,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/books" element={<Books />} />
         <Route path="/games" element={<GamingItems />} />
-        <Route path="/football" element={<Football />} />
+        <Route path="/sports" element={<Sports />} />
         <Route path="/music" element={<MusicItems />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />

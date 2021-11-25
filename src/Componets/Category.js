@@ -105,7 +105,7 @@ function Category() {
                 <div class="categorydiv123">
                   <Link
                     style={{ textDecoration: "none", color: "black", fontSize: "30px", fontWeight: "bolder" }}
-                    to="/football"
+                    to="/sports"
                   >
                     {" "}
                     Go To Sports <BsChevronRight />

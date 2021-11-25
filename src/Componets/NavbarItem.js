@@ -38,7 +38,7 @@ function NavbarItem() {
               <Link to="/books" className="dropdown-item">
                 Books
               </Link>
-              <Link to="/football" className="dropdown-item">
+              <Link to="/sports" className="dropdown-item">
                 Sports
               </Link>
               <Link to="/music" className="dropdown-item">
